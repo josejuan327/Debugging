@@ -22,7 +22,7 @@ double haversine(double ang) {
 double getDistanceFromBcn(Destination dest) {
 	Destination bcn;
 	bcn.location.lat = BCN_LAT; //#6 Correcion de LON a LAT
-	bcn.location.lon = BCN_LAT;
+	bcn.location.lon = BCN_LON; //#7 Correcion de LAN a LON
 
 	return getDistanceBetween(bcn, dest);
 }
