@@ -33,7 +33,7 @@ int main() {
 			if (!isCorrect(option)) {
 				printOptionError();
 			}
-		} while (!isCorrect(option));
+		} while (isCorrect(option)); //#5 En el momento que sea correcta se deja de hacer el ciclo, removemos '!'
 
 		execute(option, &l);
 	} while (!isExit(option));
