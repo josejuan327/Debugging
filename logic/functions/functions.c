@@ -14,7 +14,7 @@ void showAllDestinations(List *l) {
 
 
 		if(option != 1 || option != MAX_SORTING){
-			printOptionError(); // En caso de seleccionar una opcion distinta imprimir mensaje de Error
+			printOptionError(); // En caso de seleccionar una opcion distinta imprimir mensaje de Error #1
 		}
 
 	} while (option < 1 || option > MAX_SORTING);
@@ -54,7 +54,7 @@ void planTrip(List *l){
         printPlanMenu();
         option = askUserForOption();
 
-		if (destination < 1 || destination > 2) {
+		if (option < 1 || option > 2) { //Variable Incorrecta #2
 			printOptionError();
 		}
     } while (option < 1 || option > 2);
