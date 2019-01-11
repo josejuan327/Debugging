@@ -11,6 +11,12 @@ void showAllDestinations(List *l) {
 		printSortMenu();
 
 		option = askUserForOption();
+
+
+		if(option != 1 || option != MAX_SORTING){
+			printOptionError(); // En caso de seleccionar una opcion distinta imprimir mensaje de Error
+		}
+
 	} while (option < 1 || option > MAX_SORTING);
 
 	option -= 1;
