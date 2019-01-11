@@ -30,11 +30,11 @@ int askUserForOption() {
 }
 
 int isCorrect(int option) {
-	return option < FIRST_OPTION && option > LAST_OPTION;
+	return (option < FIRST_OPTION && option > LAST_OPTION);
 }
-
+//Faltaron parentesis #3
 int isExit(int option) {
-	return option == LAST_OPTION;
+	return (option == LAST_OPTION);
 }
 
 char * readUserString() {
