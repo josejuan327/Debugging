@@ -21,7 +21,7 @@ double haversine(double ang) {
 // Distància haversine des de BCN
 double getDistanceFromBcn(Destination dest) {
 	Destination bcn;
-	bcn.location.lat = BCN_LON;
+	bcn.location.lat = BCN_LAT; //#6 Correcion de LON a LAT
 	bcn.location.lon = BCN_LAT;
 
 	return getDistanceBetween(bcn, dest);
